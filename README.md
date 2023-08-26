@@ -12,14 +12,14 @@
 
 ## 💡 About the project
 
-ini adalah project untuk membuat linktree untuk keperluan media sosial
+ini adalah project untuk membuat portofolio untuk keperluan media sosial
 - cek websitenya [disini](https://ariafatah0711.github.io/portofolio_v.1/)
 
 ## 🚀 Getting started
 
 instaled
 ```bash
-git clone https://github.com/ariafatah0711/portofolio.git
+git clone https://github.com/ariafatah0711/portofolio_v.1.git
 ```
 - setelah resipory terinstal anda hanya perlu mengedit di visual studio code
 - lalu ubah beberapa perubahan seperti foto profil, nama, link, dan background
