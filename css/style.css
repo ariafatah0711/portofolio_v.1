@@ -467,7 +467,11 @@ textarea:focus {
 .profil-image img {object-fit: scale-down;}
 
 /* menghilangkan efek invalid text */
-
+/* textarea:invalid {
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+} */
 
 /* ##################################################################################################### */
 /* border */
