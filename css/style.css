@@ -175,6 +175,7 @@ section {z-index: 0;}
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .wrapper {
@@ -221,7 +222,7 @@ section {z-index: 0;}
     display: flex;
     gap: 5%;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     overflow: scroll;
 }
@@ -372,7 +373,7 @@ textarea:focus {
         max-height: 120%;
     }
     .wrapper-box h1 {font-size: 1rem;}
-    .wrapper-box h4 {font-size: 0.75rem;}
+    .wrapper-box h4 {font-size: 0.65rem;}
 
     /* section-4 */
     .card {
@@ -397,7 +398,7 @@ textarea:focus {
     }
 }
 
-/* untuk dekstop mobile */
+/* untuk dekstop */
 @media only screen and (min-width:701px) and (max-width:1300px) {
     .content p {
         height: 78%;
@@ -438,14 +439,16 @@ textarea:focus {
 
     .s2-container .profil-image {
         grid-column: span 2;
-        transform: translateY(-150px);
-    }
-
-    .s2-container .profil {
-        transform: translateY(-200px);
     }
 
     .hidden {display: none;}
+
+    .s5-container .profil {
+        grid-column: span 2;
+    }
+    .s5-container .profil-image {
+        grid-column: span 2;
+    }
 }
 
 /* ##################################################################################################### */
