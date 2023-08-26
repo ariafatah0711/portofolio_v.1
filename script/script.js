@@ -39,7 +39,7 @@ function goToLink() {
 
   var whatsappLink =
     "https://wa.me/6289509221496?text=nama%20saya%20" + nama + "%0A" + pesan;
-  alert(whatsappLink);
+  // alert(whatsappLink);
   window.location.href = whatsappLink;
 
   var nama = document.getElementById("nama");
