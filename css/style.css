@@ -293,15 +293,17 @@ section {z-index: 0;}
     border: 1px solid;
 }
 .s5-container textarea {
-    margin-top: 5px;
     width: 80%;
     height: 100px;
+    margin-top: 5px;
+    font-family: 'Poppins', Tahoma ,sans-serif;
     background-color: var(--bg-1);
     color: lavender;
-    font-family: 'Poppins', Tahoma ,sans-serif;
     border: 1px solid lavender;
     border-radius: 5px;
     opacity: var(--op-1);
+    overflow: hidden;
+    padding: 2px 10px 2px 5px;
 }
 textarea:focus {
     background-color: var(--bg-3);
