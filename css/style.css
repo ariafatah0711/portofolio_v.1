@@ -260,6 +260,7 @@ section {z-index: 0;}
     font-size: 1rem;
     height: 65%;
     overflow: hidden;
+    opacity: var(--op-2);
 }
 .content a {
     display: flex;
