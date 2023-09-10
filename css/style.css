@@ -9,10 +9,12 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow: none;
 }
 
 body, main, section {overflow-x: hidden;}
@@ -516,8 +518,16 @@ textarea:focus {
 /* psudo */
 .card, .s5-container button {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 .card:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
+    /* margin-bottom: calc(15% + 15% + 50px + 50px); */
 }
+.card:first-child:hover + .card,
+.card:nth-child(2) + .card,
+.card:nth-child(3) + .card,
+.card:nth-child(4) + .card {
+    transform: translateY(100px)
+}
+
 .s5-container button:hover {
     transform: scale(0.95);}
 
