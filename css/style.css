@@ -514,7 +514,8 @@ textarea:focus {
 }
 
 /* psudo */
-.card, .s5-container button {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
+.card {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), width none;}
+.s5-container button {transition: all 0.3s ease;}
 .card:hover {
     transform: scale(0.9);
     /* margin-bottom: calc(15% + 15% + 50px + 50px); */
@@ -529,7 +530,9 @@ textarea:focus {
 } */
 
 .s5-container button:hover {
-    transform: scale(0.95);}
+    /* transform: scale(0.95); */
+    color: rgba(194, 21, 21, 0.74);
+}
 
 /* gambar agar tidak gepeng */
 .profil-image img {object-fit: scale-down;}
