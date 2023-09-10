@@ -71,10 +71,10 @@ function refresh() {
 //   }
 // });
 
-var textarea = document.getElementById("pesan");
+// pesan = document.getElementById("pesan");
 
-textarea.addEventListener("input", function () {
-  var lines = this.value.split("\n");
-  var numberOfLines = lines.length;
-  console, log("jumlah baris: " + numberOfLines);
-});
+// pesan.addEventListener("input", function () {
+//   var lines = this.value.split("\n");
+//   var numberOfLines = lines.length;
+//   console.log("jumlah baris: " + numberOfLines);
+// });
