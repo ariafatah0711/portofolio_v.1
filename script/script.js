@@ -62,3 +62,11 @@ window.onload = clearTextarea;
 function refresh() {
   location.reload(); // Akan merefresh halaman
 }
+
+// mengatur text area tidak dapat di enter
+document.getElementById("pesan").addEventListener("input", function () {
+  var lines = this.value.split("\n");
+  if (lines.length > 4) {
+    this.value = lines.slice(0, 4).join("\n");
+  }
+});

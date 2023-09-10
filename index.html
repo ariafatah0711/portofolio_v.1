@@ -185,7 +185,7 @@
                         <h2>CONTACT ME</h2>
                         <div class="contact">
                             <label for="nama"><h4>NAMA: </h4></label>
-                            <textarea maxlength="30" name="nama" id="nama" cols="0" rows="0" spellcheck="false"></textarea>
+                            <textarea maxlength="30" name="nama" id="nama" cols="0" rows="0" spellcheck="false" onkeydown="return event.key != 'Enter';"></textarea>
                             <label for="pesan"><h4>PESAN: </h4></label>
                             <textarea maxlength="120" name="pesan" id="pesan" cols="0" rows="0" spellcheck="false"></textarea>
                             <button onclick="goToLink()">Kirim Ke WhatsApp</button>
