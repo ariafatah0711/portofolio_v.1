@@ -313,7 +313,7 @@ section {z-index: 0;}
 }
 textarea:focus {
     background-color: var(--bg-3);
-    box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
     opacity: var(--op-3);
 }
 .s5-container button {
