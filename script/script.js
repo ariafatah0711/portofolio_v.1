@@ -68,42 +68,26 @@ function refresh() {
   location.reload(); // Akan merefresh halaman
 }
 
-// mengatur text area tidak dapat di enter
-// document.getElementById("pesan").addEventListener("keydown", function (event) {
-//   var lines = this.value.split(/\r*\n/);
-//   if (lines.length > 4 && event.key !== "Backspace") {
-//     event.preventDefault();
-//   }
-// });
-
-// pesan = document.getElementById("pesan");
-
-// pesan.addEventListener("input", function () {
-//   var lines = this.value.split("\n");
-//   var numberOfLines = lines.length;
-//   console.log("jumlah baris: " + numberOfLines);
-// });
-
+// mengatur tampilan android
 let currentZoomLevel = 1; // Inisialisasi level zoom awal
 let isAndroid = /Android/.test(navigator.userAgent);
 
 // Fungsi untuk mendeteksi perubahan zoom
 function detectZoomChange() {
-    let zoomLevel = document.documentElement.clientWidth / window.innerWidth;
+  let zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 
-    // Cek apakah perangkat Android dan level zoom berubah
-    if (isAndroid && zoomLevel !== currentZoomLevel) {
-        // Sesuaikan posisi halaman di sini (contohnya, mengatur margin-top)
-        document.body.style.marginTop = '20px'; // Sesuaikan dengan nilai yang Anda inginkan
+  // Cek apakah perangkat Android dan level zoom berubah
+  if (isAndroid && zoomLevel !== currentZoomLevel) {
+    // Sesuaikan posisi halaman di sini (contohnya, mengatur margin-top)
+    document.body.style.marginTop = "20px"; // Sesuaikan dengan nilai yang Anda inginkan
 
-        // Update nilai zoom saat ini
-        currentZoomLevel = zoomLevel;
-    }
+    // Update nilai zoom saat ini
+    currentZoomLevel = zoomLevel;
+  }
 
-    // Panggil fungsi ini lagi secara berulang
-    requestAnimationFrame(detectZoomChange);
+  // Panggil fungsi ini lagi secara berulang
+  requestAnimationFrame(detectZoomChange);
 }
 
 // Panggil fungsi pertama kali
 detectZoomChange();
-
