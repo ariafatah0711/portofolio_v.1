@@ -15,7 +15,7 @@ function goToLink() {
   var nama = document.getElementById("nama").value;
   var pesan = document.getElementById("pesan").value;
 
-  if (nama.value == "" && pesan.value == "") {
+  if (nama == "" || pesan == "") {
     var whatsappLink = "https://wa.me/6289509221496?";
   } else {
     // enter = %0A
