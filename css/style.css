@@ -494,7 +494,6 @@ img, div, * {
 
 /* agar text tidak dapat di select */
 *::selection {
-    /* outline: none; */
     background: transparent;
     color: inherit;
 }
