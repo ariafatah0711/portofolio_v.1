@@ -411,16 +411,17 @@ textarea:focus {
 
     /* scroll snap for project */
     .container-3 {
-        scroll-snap-type: y mandatory;
         padding-top: 50px;
         scroll-padding-top: 50px;
+        scroll-snap-type: y mandatory;
 
         /* border: 1px solid; */
     }
     .container-3 .card {
-        scroll-snap-align: start;
         height: 70%;
         margin-bottom: calc(15% + 15% + 50px);
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 
     /* section-5 */
