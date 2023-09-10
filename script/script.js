@@ -67,3 +67,9 @@ window.onload = clearTextarea;
 function refresh() {
   location.reload(); // Akan merefresh halaman
 }
+
+function blankProject() {
+  alert(
+    "sedang dalam tahap pembuatan </>. \nharap menunggu beberapa minggu kemudian.."
+  );
+}
