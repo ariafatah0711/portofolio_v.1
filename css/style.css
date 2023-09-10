@@ -485,6 +485,23 @@ textarea:focus {
 /* gambar agar tidak gepeng */
 .profil-image img {object-fit: scale-down;}
 
+/* mencegah elemen di drag */
+img, div, * {
+    -webkit-user-drag: none;
+    /* user-drag: none; */
+    /* user-select: none; */
+}
+
+/* agar text tidak dapat di select */
+*::selection {
+    /* outline: none; */
+    background: transparent;
+    color: inherit;
+}
+
+/* menghilangkan outline text area */
+textarea {outline: none;}
+
 /* ##################################################################################################### */
 /* border */
 /* ##################################################################################################### */
