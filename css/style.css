@@ -424,9 +424,6 @@ textarea:focus {
     }
 
     /* section-5 */
-    .s5-container .container {
-        /* transform: translateY(-50px); */
-    }
     .s5-container h2 {
         font-size: 1.3rem;
         padding-bottom: 5px;
