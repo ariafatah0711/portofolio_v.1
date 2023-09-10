@@ -68,6 +68,7 @@ function refresh() {
   location.reload(); // Akan merefresh halaman
 }
 
+/*
 // mengatur tampilan android
 let currentZoomLevel = 1; // Inisialisasi level zoom awal
 let isAndroid = /Android/.test(navigator.userAgent);
@@ -91,3 +92,4 @@ function detectZoomChange() {
 
 // Panggil fungsi pertama kali
 detectZoomChange();
+*/
