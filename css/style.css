@@ -286,12 +286,19 @@ section {z-index: 0;}
     padding-bottom: 8%;
 }
 
-.s5-container .container .profil {
-    padding: 5% 5%;
+.s5-container .profil-image, .s5-container .profil {
+    height: 94%;
+    padding-bottom: 10px;
 }
+.s5-container .container .profil {padding: 5% 5%;}
+.s5-container .profil-nav {margin-top: 30px;}
 .s5-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.6rem;
+    overflow: visible;
+}
+.s5-container h4 {
+    margin-top: 20px;
 }
 .s5-container > label {
     width: 100%;
