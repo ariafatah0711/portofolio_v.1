@@ -243,6 +243,7 @@ section {z-index: 0;}
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     background-color: var(--bg-3);
     overflow: hidden;
+    user-select: none;
 }
 
 .thumb {
@@ -518,14 +519,16 @@ textarea:focus {
 /* psudo */
 .card, .s5-container button {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 .card:hover {
-    transform: scale(0.95);
+    transform: scale(0.9);
     /* margin-bottom: calc(15% + 15% + 50px + 50px); */
 }
-.card:first-child:hover + .card,
-.card:nth-child(2) + .card,
-.card:nth-child(3) + .card,
-.card:nth-child(4) + .card {
-    transform: translateY(100px)
+@media only screen and (max-width:700px) {
+    .card:first-child:hover + .card,
+    .card:nth-child(2) + .card,
+    .card:nth-child(3) + .card,
+    .card:nth-child(4) + .card {
+        transform: translateY(100px)
+    }
 }
 
 .s5-container button:hover {
@@ -548,7 +551,7 @@ img, div, * {
 }
 
 /* menghilangkan outline text area */
-textarea {outline: none;}
+textarea, header {outline: none;}
 
 /* ##################################################################################################### */
 /* border */
