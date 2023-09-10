@@ -15,30 +15,35 @@ function goToLink() {
   var nama = document.getElementById("nama").value;
   var pesan = document.getElementById("pesan").value;
 
-  // enter = %0A
-  var formatNama = nama.replace(/\n/g, function (match) {
-    return "%0A".repeat(match.length);
-  });
-  var formatPesan = pesan.replace(/\n/g, function (match) {
-    return "%0A".repeat(match.length);
-  });
+  if (nama.value == "" && pesan.value == "") {
+    var whatsappLink = "https://wa.me/6289509221496?";
+  } else {
+    // enter = %0A
+    var formatNama = nama.replace(/\n/g, function (match) {
+      return "%0A".repeat(match.length);
+    });
+    var formatPesan = pesan.replace(/\n/g, function (match) {
+      return "%0A".repeat(match.length);
+    });
 
-  nama = formatNama;
-  pesan = formatPesan;
+    nama = formatNama;
+    pesan = formatPesan;
 
-  // spasi = %20
-  formatNama = nama.replace(/ /g, function (match) {
-    return "%20".repeat(match.length);
-  });
-  formatPesan = pesan.replace(/ /g, function (match) {
-    return "%20".repeat(match.length);
-  });
+    // spasi = %20
+    formatNama = nama.replace(/ /g, function (match) {
+      return "%20".repeat(match.length);
+    });
+    formatPesan = pesan.replace(/ /g, function (match) {
+      return "%20".repeat(match.length);
+    });
 
-  nama = formatNama;
-  pesan = formatPesan;
+    nama = formatNama;
+    pesan = formatPesan;
 
-  var whatsappLink =
-    "https://wa.me/6289509221496?text=nama%20saya%20" + nama + "%0A" + pesan;
+    // var whatsappLink = "https://wa.me/6289509221496?text=nama%20saya%20" + nama + "%0A" + pesan;
+    var whatsappLink =
+      "https://wa.me/6289509221496?text=nama%20saya%20" + nama + "%0A" + pesan;
+  }
   // alert(whatsappLink);
   window.location.href = whatsappLink;
 
