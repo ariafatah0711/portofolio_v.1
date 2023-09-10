@@ -514,7 +514,7 @@ textarea:focus {
 }
 
 /* psudo */
-.card {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), width none;}
+.card {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)}
 .s5-container button {transition: all 0.3s ease;}
 .card:hover {
     transform: scale(0.9);
@@ -534,6 +534,10 @@ textarea:focus {
     color: rgba(194, 21, 21, 0.74);
 }
 
+.s4-container .content a{opacity: var(--op-2);}
+.s4-container .content a:hover {
+    opacity: var(--op-3);
+}
 /* gambar agar tidak gepeng */
 .profil-image img {object-fit: scale-down;}
 
@@ -545,7 +549,7 @@ img, div, * {
 }
 
 /* agar text tidak dapat di select */
-*::selection {
+*:not(textarea)::selection {
     background: transparent;
     color: inherit;
 }
