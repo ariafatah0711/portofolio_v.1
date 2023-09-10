@@ -64,9 +64,17 @@ function refresh() {
 }
 
 // mengatur text area tidak dapat di enter
-document.getElementById("pesan").addEventListener("input", function () {
+// document.getElementById("pesan").addEventListener("keydown", function (event) {
+//   var lines = this.value.split(/\r*\n/);
+//   if (lines.length > 4 && event.key !== "Backspace") {
+//     event.preventDefault();
+//   }
+// });
+
+var textarea = document.getElementById("pesan");
+
+textarea.addEventListener("input", function () {
   var lines = this.value.split("\n");
-  if (lines.length > 4) {
-    this.value = lines.slice(0, 4).join("\n");
-  }
+  var numberOfLines = lines.length;
+  console, log("jumlah baris: " + numberOfLines);
 });
