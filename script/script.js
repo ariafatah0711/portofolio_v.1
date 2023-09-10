@@ -83,3 +83,27 @@ function refresh() {
 //   var numberOfLines = lines.length;
 //   console.log("jumlah baris: " + numberOfLines);
 // });
+
+let currentZoomLevel = 1; // Inisialisasi level zoom awal
+let isAndroid = /Android/.test(navigator.userAgent);
+
+// Fungsi untuk mendeteksi perubahan zoom
+function detectZoomChange() {
+    let zoomLevel = document.documentElement.clientWidth / window.innerWidth;
+
+    // Cek apakah perangkat Android dan level zoom berubah
+    if (isAndroid && zoomLevel !== currentZoomLevel) {
+        // Sesuaikan posisi halaman di sini (contohnya, mengatur margin-top)
+        document.body.style.marginTop = '20px'; // Sesuaikan dengan nilai yang Anda inginkan
+
+        // Update nilai zoom saat ini
+        currentZoomLevel = zoomLevel;
+    }
+
+    // Panggil fungsi ini lagi secara berulang
+    requestAnimationFrame(detectZoomChange);
+}
+
+// Panggil fungsi pertama kali
+detectZoomChange();
+
