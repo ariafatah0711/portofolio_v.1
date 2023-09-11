@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* ##################################################################################################### */
+/* mouse-scroll-btn */
+/* ##################################################################################################### */
+
+* {
+    font-family: 'Poppins', Tahoma ,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a#scroll-btn {
+    z-index: 1;
+    position: fixed;
+    /* left:45%; */
+    right: 25px;
+    bottom: 25px;
+    height: 10em;
+    width: 6.2em;
+    border: 0.5em solid #ffffff;
+    border-radius: 3em;
+    font-size: 5px;
+}
+
+a#scroll-btn::before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 1.2em;
+    height: 1.2em;
+    width: 1.2em;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-5.3em);
+        opacity: 0;
+    }
+}
+
+a#scroll-btn::after {
+    position: absolute;
+    content: "SCROLL UP";
+    width: 12em;
+    display: block;
+    width: 12em;
+    text-align: center;
+    left: -4.2em;
+    bottom: -2.5em;
+    font-size: 1.6em;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+/* a#scroll-btn {display: none;} */
+
+@media only screen and (max-width:700px) {
+    a#scroll-btn {
+        display: flex;
+        font-size: 3px;
+        left: 50%;
+        bottom: 20px;
+    }
+}
