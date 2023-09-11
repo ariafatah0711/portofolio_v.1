@@ -127,7 +127,7 @@ section {z-index: 0;}
 }
 .s1-nav a {
     opacity: 65%;
-    transition: ease-in-out 0.3s;
+    transition: all 0.5s ease-in-out;
 }
 .s1-nav a::before {content: "---";}
 .s1-nav > a:hover, .s1-nav a:hover::before {
@@ -172,6 +172,15 @@ section {z-index: 0;}
     justify-content: space-around;
     align-items: center;
     padding: 0 5%;
+}
+
+.icon-language i {
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+.icon-language i:hover {
+    color: red;
+    opacity: 0.8;
 }
 
 /* ##################################################################################################### */
@@ -515,21 +524,28 @@ textarea:focus {
 }
 
 /* psudo */
-.card {transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)}
-.s5-container button {transition: all 0.3s ease;}
+.card {
+    transform-origin: center center;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
+}
 .card:hover {
     transform: scale(0.9);
+    transform: scale(1.1);
     /* margin-bottom: calc(15% + 15% + 50px + 50px); */
 }
-/* @media only screen and (max-width:700px) {
-    .card:first-child:hover + .card,
+@media only screen and (max-width:700px) {
+    /* .card:first-child:hover + .card,
     .card:nth-child(2) + .card,
     .card:nth-child(3) + .card,
     .card:nth-child(4) + .card {
         transform: translateY(100px)
+    } */
+    .card:hover {
+        transform: scale(none);
     }
-} */
+}
 
+.s5-container button {transition: all 0.3s ease;}
 .s5-container button:hover {
     /* transform: scale(0.95); */
     color: rgba(194, 21, 21, 0.74);
@@ -557,6 +573,9 @@ img, div, * {
 
 /* menghilangkan outline text area */
 textarea, header {outline: none;}
+
+/* bayangan pada profil-image */
+/* .profil-image img {filter: drop-shadow(25px 10px 5px rgba(182, 40, 134, 0.692));} */
 
 /* ##################################################################################################### */
 /* border */
