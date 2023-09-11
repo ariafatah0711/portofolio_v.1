@@ -2,8 +2,12 @@
 // anchor tag reset
 if (window.location.hash) {
   history.replaceState(null, null, window.location.href.split("#")[0]);
-  window.location.href = "#section-1";
 }
+// window.onload = function () {
+//   // if (!window.location.hash) {
+//   window.location.href = "#section-1";
+//   // }
+// };
 
 // unchecked navbar
 function uncheckCheckbox() {
