@@ -74,32 +74,21 @@ function blankProject() {
   );
 }
 
+/*
 // // scroll-btn
-// var scrollButton = document.getElementById("scroll-btn");
-
-// function checkScrollPosition() {
-//   if (window.pageYOffset > 500) {
-//     scrollButton.style.display = "block";
-//   } else {
-//     scrollButton.style, (display = "none");
-//   }
-// }
-
-// window.addEventListener("scroll", checkScrollPosition);
-
 var scrollBtn = document.getElementById("scroll-btn");
 
 function showScrollBtn() {
   scrollBtn.style.display = "block";
 
   setTimeout(() => {
-    // scrollBtn.style.bottom = "100px";
     scrollBtn.style.display = "none";
-  }, 3000);
+  }, 5000);
   // scrollBtn.style.bottom = "25px";
 }
 
-// window.addEventListener("scroll", showScrollBtn);
 // window.addEventListener("mousemove", showScrollBtn);
+// window.addEventListener("scroll", showScrollBtn);
 // window.addEventListener("touchmove", showScrollBtn);
 // window.addEventListener("touch", showScrollBtn);
+*/

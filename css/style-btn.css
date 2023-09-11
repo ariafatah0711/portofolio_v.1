@@ -11,18 +11,23 @@
     box-sizing: border-box;
 }
 
-a#scroll-btn {
+
+:root {
+    --col-1: lavender;
+}
+a.scroll-btn {
     z-index: 1;
     position: absolute;
     height: 10em;
     width: 6.2em;
-    border: 0.5em solid #ffffff;
+    border: 0.5em solid var(--col-1);
     border-radius: 3em;
     font-size: 5px;
     transition: all 3s ease-in-out;
+    opacity: 0.8;
 }
 
-a#scroll-btn::before {
+a.scroll-btn::before {
     position: absolute;
     content: "";
     margin: auto;
@@ -31,12 +36,12 @@ a#scroll-btn::before {
     bottom: 1.2em;
     height: 1.2em;
     width: 1.2em;
-    background: #ffffff;
+    background: var(--col-1);
     border-radius: 50%;
-    animation: move-down 2s infinite;
 }
 
-@keyframes move-down {
+a.up::before {animation: move-up 2s infinite;}
+@keyframes move-up {
     80% {
         opacity: 0.5;
     }
@@ -45,8 +50,18 @@ a#scroll-btn::before {
         opacity: 0;
     }
 }
+a.down::before {animation: move-down 2s infinite; top: -4em;}
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(5.3em);
+        opacity: 0;
+    }
+}
 
-a#scroll-btn::after {
+a.scroll-btn::after {
     position: absolute;
     content: "SCROLL UP";
     width: 12em;
@@ -56,30 +71,43 @@ a#scroll-btn::after {
     left: -4.2em;
     bottom: -2.5em;
     font-size: 1.6em;
-    color: #ffffff;
+    color: var(--col-1);
     letter-spacing: 3px;
     font-weight: 600;
 }
 
-a#scroll-btn {
-    display: none;
-    /* left:45%; */
-    /* right: 25px; */
-    bottom: 25px;
-    right: -500px;
+a.up {
+    /* display: none; */
+    z-index: 10; right: 55px; top: 70px; font-size: 3.5px;
+}
+a.down {
+    /* display: none; */
+    z-index: 10; right: 55px; bottom: 70px; font-size: 3.5px;
+}
+a.down::after {
+    position: absolute;
+    content: "SCROLL DOWN";
+    width: 14em;
+    left: -5.2em;
 }
 
 @media only screen and (max-width:700px) {
-    a#scroll-btn {
+    a.up {
         display: flex;
         font-size: 3px;
         left: 50%;
         bottom: 50px;
         transform: translateY(25px);
     }
+    a.down {
+        display: none;
+    }
 }
 
 :root {
     --bg-1: radial-gradient(#0f172a, #0f1930, #0f1930);
 }
-
+/* 
+main:not(:target) a#scroll-btn {
+    visibility: visible;
+} */
