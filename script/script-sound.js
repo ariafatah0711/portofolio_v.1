@@ -15,3 +15,12 @@ semuaElemenA.forEach((elemenA) => {
     console.log("audio");
   });
 });
+
+var semuaElemenBtn = document.querySelectorAll("button");
+
+semuaElemenBtn.forEach((elemenA) => {
+  elemenA.addEventListener("click", () => {
+    audio1.play();
+    console.log("audio");
+  });
+});
