@@ -14,14 +14,12 @@
 a#scroll-btn {
     z-index: 1;
     position: absolute;
-    /* left:45%; */
-    right: 25px;
-    bottom: 25px;
     height: 10em;
     width: 6.2em;
     border: 0.5em solid #ffffff;
     border-radius: 3em;
     font-size: 5px;
+    transition: all 3s ease-in-out;
 }
 
 a#scroll-btn::before {
@@ -63,13 +61,25 @@ a#scroll-btn::after {
     font-weight: 600;
 }
 
-a#scroll-btn {display: none;}
+a#scroll-btn {
+    display: none;
+    /* left:45%; */
+    /* right: 25px; */
+    bottom: 25px;
+    right: -500px;
+}
 
 @media only screen and (max-width:700px) {
     a#scroll-btn {
-        /* display: flex; */
+        display: flex;
         font-size: 3px;
         left: 50%;
-        bottom: 20px;
+        bottom: 50px;
+        transform: translateY(25px);
     }
 }
+
+:root {
+    --bg-1: radial-gradient(#0f172a, #0f1930, #0f1930);
+}
+

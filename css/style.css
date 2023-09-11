@@ -83,12 +83,12 @@ span {
     padding-left: 5%;
 }
 
-#header-1 {position: fixed;z-index: 1;}
-#header-2 {z-index: 2;background: none;backdrop-filter: none;position: static;}
-#header-3 {z-index: 3;background: none;backdrop-filter: none;position: static;}
-#header-4 {z-index: 4;background: none;backdrop-filter: none;position: static;}
-#header-5 {z-index: 5;background: none;backdrop-filter: none;position: static;}
-#header-6 {z-index: 6;background: none;backdrop-filter: none;position: static;}
+#header-1 {position: fixed;z-index: 11;}
+#header-2 {z-index: 12;background: none;backdrop-filter: none;position: static;}
+#header-3 {z-index: 13;background: none;backdrop-filter: none;position: static;}
+#header-4 {z-index: 14;background: none;backdrop-filter: none;position: static;}
+#header-5 {z-index: 15;background: none;backdrop-filter: none;position: static;}
+#header-6 {z-index: 16;background: none;backdrop-filter: none;position: static;}
 section {z-index: 0;}
 
 /* ##################################################################################################### */
@@ -566,3 +566,10 @@ textarea, header {outline: none;}
 .bottom {border: 1px solid red;height: 115px;width: 100%;position: fixed;bottom: 0px;display: flex;
     display: none;
 }
+
+a#scroll-btn {z-index: 2;}
+#section-1 {z-index: 3; border: 1px solid red; background: var(--bg-1);}
+#section-2 {z-index: 3;}
+#section-3 {z-index: 3;}
+#section-4 {z-index: 1;}
+#section-5 {z-index: 1;}
