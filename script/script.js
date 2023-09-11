@@ -73,3 +73,29 @@ function blankProject() {
     "sedang dalam tahap pembuatan </>. \nharap menunggu beberapa minggu kemudian.."
   );
 }
+
+// // scroll-btn
+// var scrollButton = document.getElementById("scroll-btn");
+
+// function checkScrollPosition() {
+//   if (window.pageYOffset > 500) {
+//     scrollButton.style.display = "block";
+//   } else {
+//     scrollButton.style, (display = "none");
+//   }
+// }
+
+// window.addEventListener("scroll", checkScrollPosition);
+
+var scrollBtn = document.getElementById("scroll-btn");
+
+function showScrollBtn() {
+  scrollBtn.style.display = "block";
+
+  setTimeout(() => {
+    scrollBtn.style.display = "none";
+  }, 3000);
+}
+
+window.addEventListener("scroll", showScrollBtn);
+window.addEventListener("mousemove", showScrollBtn);

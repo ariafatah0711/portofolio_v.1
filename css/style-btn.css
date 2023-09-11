@@ -13,7 +13,7 @@
 
 a#scroll-btn {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     /* left:45%; */
     right: 25px;
     bottom: 25px;
@@ -63,11 +63,11 @@ a#scroll-btn::after {
     font-weight: 600;
 }
 
-/* a#scroll-btn {display: none;} */
+a#scroll-btn {display: none;}
 
 @media only screen and (max-width:700px) {
     a#scroll-btn {
-        display: flex;
+        /* display: flex; */
         font-size: 3px;
         left: 50%;
         bottom: 20px;
