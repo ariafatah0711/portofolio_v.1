@@ -1,7 +1,8 @@
 // input audio
 var audio1 = new Audio(
   // "/home/aria/Dokumen/WEB_Aria/portofolio_v.1/script/s1.mp3"
-  "https://www.fesliyanstudios.com/play-mp3/387"
+  // "https://www.fesliyanstudios.com/play-mp3/387"
+  "https://www.fesliyanstudios.com/play-mp3/388"
 );
 // audio1.src =;
 
