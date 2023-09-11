@@ -1,12 +1,13 @@
 // input audio
-const audio1 = new Audio();
-audio1.src = "../sound/click-1.mp3";
+var audio1 = new Audio("click-1.mp3");
+// audio1.src =;
 
 // onclick to a
-const semuaElemenA = document.querySelectorAll("a");
+var semuaElemenA = document.querySelectorAll("a");
 
 semuaElemenA.forEach((elemenA) => {
   elemenA.addEventListener("click", () => {
     audio1.play();
+    console.log("audio");
   });
 });

@@ -541,7 +541,7 @@ textarea:focus {
         transform: translateY(100px)
     } */
     .card:hover {
-        transform: scale(none);
+        transform: scale(1);
     }
 }
 
