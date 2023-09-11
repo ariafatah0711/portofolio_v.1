@@ -1,5 +1,8 @@
 // input audio
-var audio1 = new Audio("click-1.mp3");
+var audio1 = new Audio(
+  // "/home/aria/Dokumen/WEB_Aria/portofolio_v.1/script/s1.mp3"
+  "https://www.fesliyanstudios.com/play-mp3/387"
+);
 // audio1.src =;
 
 // onclick to a

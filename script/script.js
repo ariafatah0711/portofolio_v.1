@@ -66,6 +66,7 @@ window.onload = clearTextarea;
 // refresh halaman
 function refresh() {
   location.reload(); // Akan merefresh halaman
+  // location.reload()
 }
 
 function blankProject() {
