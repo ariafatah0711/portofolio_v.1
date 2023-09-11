@@ -1,6 +1,6 @@
 // input audio
 const audio1 = new Audio();
-audio.src = "../sound/click-1.mp3";
+audio1.src = "../sound/click-1.mp3";
 
 // onclick to a
 const semuaElemenA = document.querySelectorAll("a");
