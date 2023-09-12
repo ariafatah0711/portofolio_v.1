@@ -353,6 +353,7 @@ textarea:focus {
     border-radius: 8px;
     border: none;
     color: lavender;
+    cursor: pointer;
 }
 #nama {height: 30px;}
 
@@ -548,7 +549,7 @@ textarea:focus {
 .s5-container button {transition: all 0.3s ease;}
 .s5-container button:hover {
     /* transform: scale(0.95); */
-    color: rgba(194, 21, 21, 0.74);
+    color: rgb(228, 20, 20);
 }
 
 .s4-container .content a{opacity: var(--op-2);}

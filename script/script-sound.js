@@ -16,11 +16,16 @@ semuaElemenA.forEach((elemenA) => {
   });
 });
 
-var semuaElemenBtn = document.querySelectorAll("button");
+// onclick to btn
+var btnAudio = document.getElementById("audio1");
 
-semuaElemenBtn.forEach((elemenA) => {
-  elemenA.addEventListener("click", () => {
-    audio1.play();
-    console.log("audio");
-  });
+btnAudio.addEventListener("click", () => {
+  audio1.play();
 });
+
+// semuaElemenBtn.forEach((elemenA) => {
+//   elemenA.addEventListener("click", () => {
+//     audio1.play();
+//     console.log("audio");
+//   });
+// });
