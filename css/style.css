@@ -563,7 +563,7 @@ textarea:focus {
 img, div, * {
     -webkit-user-drag: none;
     /* user-drag: none; */
-    /* user-select: none; */
+    user-select: none;
 }
 
 /* agar text tidak dapat di select */
@@ -574,6 +574,14 @@ img, div, * {
 
 /* menghilangkan outline text area */
 textarea, header {outline: none;}
+
+/* cursor */
+h1, h2, h3, h4, h5, h6, p, span {
+    cursor: default;
+}
+button, i, a {
+    cursor: pointer;
+}
 
 /* bayangan pada profil-image */
 /* .profil-image img {filter: drop-shadow(25px 10px 5px rgba(182, 40, 134, 0.692));} */
