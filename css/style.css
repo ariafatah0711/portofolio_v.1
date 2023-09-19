@@ -197,7 +197,7 @@ section {z-index: 0;}
     width: 80%;
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 27%);
+    grid-template-rows: repeat(3, 28%);
     padding: 15px 0;
 }
 
@@ -234,6 +234,20 @@ section {z-index: 0;}
 .box-item h4 {
     opacity: var(--op-2);
     margin-bottom: 10px;
+}
+#exp {
+    cursor: pointer;
+    opacity: var(--op-2);
+}
+#exp i {
+    rotate: -45deg;
+    transition: all 0.3s ease;
+}
+#exp:hover {
+    opacity: var(--op-3);
+}
+#exp:hover i {
+    transform: translate(8px, -2px);
 }
 
 /* ##################################################################################################### */
@@ -416,6 +430,8 @@ textarea:focus {
     }
     .wrapper-box h1 {font-size: 1rem;}
     .wrapper-box h4 {font-size: 0.65rem;}
+
+    .s3-container .hidden {display: none;}
 
     /* section-4 */
     .card {
