@@ -12,7 +12,7 @@ var semuaElemenA = document.querySelectorAll("a");
 semuaElemenA.forEach((elemenA) => {
   elemenA.addEventListener("click", () => {
     audio1.play();
-    console.log("audio");
+    console.info("audio-play");
   });
 });
 
@@ -22,10 +22,3 @@ var btnAudio = document.getElementById("audio1");
 btnAudio.addEventListener("click", () => {
   audio1.play();
 });
-
-// semuaElemenBtn.forEach((elemenA) => {
-//   elemenA.addEventListener("click", () => {
-//     audio1.play();
-//     console.log("audio");
-//   });
-// });

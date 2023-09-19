@@ -8,9 +8,9 @@
     <link rel="icon" href="image/Profil-1.png" type="image/x-icon" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-navbar.css">
-    <!-- <link rel="stylesheet" href="css/style-btn.css"> -->
-    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- script -->
+    <script src="script/script.js"></script>
     <!-- icon font-awosome -->
     <script src="https://kit.fontawesome.com/0d6ed94a1b.js" crossorigin="anonymous"></script>
     <!-- library animation aos -->
@@ -19,9 +19,8 @@
 <body>
 
     <main>
-        <!-- <a href="#section-1" id="scroll-btn" class="up scroll-btn"></a> -->
-        <!-- <a href="#section-5" id="scroll-btn" class="down scroll-btn"></a> -->
 
+        <!-- navbar -->
         <input type="checkbox" id="check">
         <label for="check" class="icon nav-icon">
             <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
@@ -36,6 +35,7 @@
             <a href="#section-5" onclick="uncheckCheckbox()">CONTACT</a>
         </nav>    
 
+        <!-- home -->
         <section id="section-1">
             <div class="header" id="header-1"></div>
 
@@ -67,6 +67,7 @@
             </div>
         </section>
 
+        <!-- about -->
         <section id="section-2">
             <div class="s2-container">
                 <div class="header" id="header-2">
@@ -100,6 +101,7 @@
             </div>
         </section>
 
+        <!-- experience -->
         <section id="section-3">
             <div class="s3-container">
                 <div class="header" id="header-3">
@@ -147,7 +149,7 @@
                             <h1></h1>
                             <div class="box-item">
                                 <a href="./exp.html#exp">
-                                    <h3 id="exp">View Full EXPERIENCE <i class="fa-solid fa-arrow-right"></i></h3>
+                                    <h3 id="exp">View Full Experience <i class="fa-solid fa-arrow-right"></i></h3>
                                 </a>
                             </div>
                         </div>
@@ -156,6 +158,7 @@
             </div>
         </section>
 
+        <!-- project -->
         <section id="section-4">
             <div class="s4-container">
                 <div class="header" id="header-4">
@@ -211,7 +214,7 @@
                             <p>
                                 Full Project Yang telah aku buat.
                             </p>
-                            <a href="./project.html#back"><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                            <a href="./project.html"><i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
                         </div>
                     </div>
                    
@@ -219,6 +222,7 @@
             </div>
         </section>
 
+        <!-- contact -->
         <section id="section-5">
             <div class="s5-container">
                 <div class="header" id="header-5">
@@ -254,6 +258,7 @@
 
     </main>
 
+    <!-- not responsive -->
     <div id="desktop-mobile">
             <h1>ERROR 404</h1>
             <p>Halaman ini tidak responsive untuk model anda tolong pindah ke desktop lainya, seperti desktop PC, Laptop, Atau Android dan lakukan</p>
@@ -263,7 +268,10 @@
     <!-- border test -->
     <div class="bottom"></div>
     
-    <script src="script/script-sound.js"></script>
+    <!-- script -->
+    <script src="script/navbar.js"></script>
+    <script src="script/contact.js"></script>
+    <script src="script/sound.js"></script>
 
     <!-- script aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

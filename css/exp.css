@@ -1,39 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 /* ##################################################################################################### */
-/* scroll snap */
-/* ##################################################################################################### */
-
-* {
-    font-family: 'Poppins', Tahoma ,sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-html, body {
-    scroll-behavior: smooth;
-    overflow: scroll;
-}
-
-body, main, section {overflow-x: hidden;}
-
-main {
-    width: 100%;
-    overflow-y: scroll;
-}
-
-main > section {
-    height: auto;
-    width: 100%;
-    display: flex;
-    overflow-y: scroll;
-}
-
-
-/* ##################################################################################################### */
-/* main, body, header */
+/* main, body */
 /* ##################################################################################################### */
 :root {
     --bg-1: radial-gradient(#0f172a, #0f1930, #0f1930);
@@ -44,9 +11,29 @@ main > section {
     --op-2: 80%;
     --op-3: 100%;
 }
+
+* {
+    font-family: 'Poppins', Tahoma ,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body, main, section {overflow-x: hidden;}
+
 main {
     background: var(--bg-1);
 }
+
+/* ##################################################################################################### */
+/* header */
+/* ##################################################################################################### */
 
 h1, h2, h3, h4, h5, h6, p, div, a{
     color: var(--col-1);
@@ -54,8 +41,6 @@ h1, h2, h3, h4, h5, h6, p, div, a{
 }
 
 h2 {overflow: hidden;}
-/* h4 {text-align: justify;} */
-.s1-container h4 {text-align: left;}
 span {
     opacity: var(--op-3);
     color: white;
@@ -81,27 +66,17 @@ span {
 
 #header-1 {position: fixed;z-index: 1;}
 section {z-index: 0;}
-
-button {
-    cursor: pointer;
-}
+button {cursor: pointer;}
 
 /* ##################################################################################################### */
 /* section-3 */
-.container-2 {
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-}
+.container-2 {width: 100%;}
 
 .wrapper {
     width: 80%;
     height: auto;
     margin: 0px auto;
-    display: grid;
     padding: 15px 0;
-    overflow: scroll;
 }
 
 .wrapper-box {
@@ -140,6 +115,11 @@ button {
     opacity: var(--op-2);
     margin-bottom: 10px;
 }
+
+/* back */
+.back {
+    height: 40px;
+}
 #exp {
     cursor: pointer;
     opacity: var(--op-2);
@@ -154,10 +134,8 @@ button {
 #exp:hover i {
     transform: translate(8px, -2px);
 }
-.back {
-    height: 40px;
-}
 
+/* not responsive */
 @media only screen and (max-height:1000px) and (max-width:1100px) {
     main {
         display: none;
