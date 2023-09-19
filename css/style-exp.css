@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* ##################################################################################################### */
+/* scroll snap */
+/* ##################################################################################################### */
+
+* {
+    font-family: 'Poppins', Tahoma ,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+body, main, section {overflow-x: hidden;}
+
+main {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+main > section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    overflow-y: scroll;
+}
+
+
+/* ##################################################################################################### */
+/* main, body, header */
+/* ##################################################################################################### */
+:root {
+    --bg-1: radial-gradient(#0f172a, #0f1930, #0f1930);
+    --bg-2: radial-gradient(#0f1930, #0f1930, #0f172a);
+    --bg-3: #1a2642;
+    --col-1: lavender;
+    --op-1: 65%;
+    --op-2: 80%;
+    --op-3: 100%;
+}
+main {
+    background: var(--bg-1);
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a{
+    color: var(--col-1);
+    width: 100%;
+}
+
+h2 {overflow: hidden;}
+/* h4 {text-align: justify;} */
+.s1-container h4 {text-align: left;}
+span {
+    opacity: var(--op-3);
+    color: white;
+}
+
+#desktop-mobile {
+    display: none;
+}
+
+/* header */
+.header {
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: z-index 0.3s;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+#header-1 {position: fixed;z-index: 1;}
+section {z-index: 0;}
+
+button {
+    cursor: pointer;
+}
+
+/* ##################################################################################################### */
+/* section-3 */
+.container-2 {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    display: grid;
+    /* grid-template-rows: repeat(3, 150px); */
+    padding: 15px 0;
+    overflow: scroll;
+}
+
+.wrapper-box {
+    height: 165px;
+    display: grid;
+    grid-template-columns: 22% 78%;
+}
+.wrapper-box h1 {
+    width: 100%;
+    height: 100%;
+    opacity: var(--op-2);
+    float: left;
+}
+.box-item {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.box-item h3 {
+    opacity: 0.95;
+}
+.box-item button {
+    border: none;
+    border-radius: 10px;
+    padding: 1px 8px;
+    margin-right: 10px;
+    color: cyan;
+    background: rgba(0, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+.box-item button:hover {
+    color: cyan;
+    background: rgba(0, 255, 255, 0.6);
+}
+.box-item h4 {
+    opacity: var(--op-2);
+    margin-bottom: 10px;
+}
+#exp {
+    cursor: pointer;
+    opacity: var(--op-2);
+}
+#exp i {
+    rotate: -45deg;
+    transition: all 0.3s ease;
+}
+#exp:hover {
+    opacity: var(--op-3);
+}
+#exp:hover i {
+    transform: translate(8px, -2px);
+}
+.back {
+    height: 40px;
+    /* height: 80px; */
+}
+
+@media only screen and (max-height:1000px) and (max-width:1100px) {
+    main {
+        display: none;
+    }
+    body {
+        overflow: hidden;
+        padding: 50px 100px;
+        background: var(--bg-1);
+    }
+    #desktop-mobile {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        text-align: center;
+        color: var(--col-1);
+        margin: auto auto;
+
+    }
+    #desktop-mobile h1 {
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        display: block;
+        border-bottom: 1px solid var(--col-1);
+    }
+    #desktop-mobile p {
+        font-size: 0.9rem;
+    }
+    #desktop-mobile a {
+        width: 100%;
+        font-size: 1.3rem;
+        color: black;
+        background: lavender;
+        border-radius: 30px;
+        padding: 5px 20px;
+    }
+    #desktop-mobile a:hover {
+        color: red;
+    }
+}
