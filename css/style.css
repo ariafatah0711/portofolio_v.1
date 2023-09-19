@@ -197,7 +197,7 @@ section {z-index: 0;}
     width: 80%;
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 28%);
+    grid-template-rows: repeat(3, 27%);
     padding: 15px 0;
 }
 
@@ -215,6 +215,9 @@ section {z-index: 0;}
     width: 100%;
     height: 100%;
 }
+.box-item h3 {
+    opacity: 0.95;
+}
 .box-item button {
     border: none;
     border-radius: 10px;
@@ -222,6 +225,11 @@ section {z-index: 0;}
     margin-right: 10px;
     color: cyan;
     background: rgba(0, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+.box-item button:hover {
+    color: cyan;
+    background: rgba(0, 255, 255, 0.6);
 }
 .box-item h4 {
     opacity: var(--op-2);
@@ -272,6 +280,7 @@ section {z-index: 0;}
     display: flex;
     height: 35px;
     overflow: hidden;
+    opacity: 0.95;
 }
 .content p {
     font-size: 1rem;
