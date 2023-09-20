@@ -26,7 +26,8 @@
 
 .section-s img {
     height: 205px;
-    padding-left: 15px;
+    margin: 0;
+    padding-right: 15px;
     aspect-ratio: 16 / 9;
 }
 
@@ -47,6 +48,6 @@
     top: calc(100px + 100px);
 }
 .section-s i:first-child {left: 115px;}
-.section-s i:last-child {right: 115px;}
+.section-s i:last-child {right: 125px;}
 
 #header-3 {display: none;}
