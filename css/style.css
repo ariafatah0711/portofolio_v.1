@@ -314,6 +314,9 @@ section {z-index: 0;}
     grid-row: span 4;
     grid-column: span 1;
 }
+.hidden-desktop {
+    display: none;
+}
 
 /* ##################################################################################################### */
 /* section-5 */
@@ -446,6 +449,7 @@ textarea:focus {
     }
 
     .s4-container .hidden {display: none;}
+    .s4-container .hidden-desktop {display: flex;}
 
     /* scroll snap for project */
     .container-3 {
