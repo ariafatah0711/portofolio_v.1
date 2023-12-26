@@ -28,7 +28,7 @@ This is my version 1 web portfolio that I created using HTML, CSS, and JS. The w
 <details id="back" open>
   <summary><b>Preview</b></summary>
 
-  <img src="./image/project-1.png">
+  <img src="./image/portofolio_v.1.png">
 </details>
 
 <p id="download"></p>
